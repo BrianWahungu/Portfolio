@@ -43,11 +43,16 @@ const About = ({isDarkMode}) => {
         transition={{duration:0.6, delay:0.8}} 
         className='flex-1'>
             <p className='mb-10 max-w-2xl font-Ovo'>
-                I am an experienced Full-Stack Software Engineer with a 
-                vast amount of knowledge in different programming languages. 
-                I incorporate Machine Learning, Artificial Intelligence among 
-                other data science concepts to ensure that my users experience 
-                an alluring experience when they visit my sites.
+            I am a multifaceted professional with expertise in film production, 
+            full-stack software engineering, and digital marketing. With a strong 
+            foundation in storytelling, I craft compelling visual narratives while 
+            leveraging cutting-edge technology to build scalable digital solutions. 
+            My background in social media marketing and SEO allows me to bridge 
+            the gap between creativity and data-driven strategies, helping brands 
+            and businesses maximize their online presence. Whether it is developing 
+            web applications, producing high-quality video content, 
+            or executing impactful marketing campaigns, I thrive at the intersection 
+            of technology, creativity, and strategy.
             </p>
             <motion.ul 
             initial={{opacity:0}}

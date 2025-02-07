@@ -30,8 +30,9 @@ const Services = () => {
       whileInView={{opacity:1}}
       transition={{delay:0.7, duration:0.5}}
     className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I am a Full-Stack Software Engineer with 3 years of experience
-        in creating scalable websites and other software solutions
+        I offer expert film production, full-stack software development, 
+        and digital marketing services, combining creativity, technology, 
+        and strategy to deliver impactful solutions.
     </motion.p>
 
     <motion.div 

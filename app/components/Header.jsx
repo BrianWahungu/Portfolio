@@ -26,14 +26,14 @@ const Header = () => {
       initial={{y: -30, opacity:0}}
       whileInView={{y:0, opacity:1}}
       transition={{duration: 0.8, delay: 0.5}} 
-      className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>Full-Stack Software Engineer Based in Nairobi
+      className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>Film Specialist, Full-stack Software Engineer, Digital Marketer
       </motion.h1>
 
       <motion.p
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration: 0.6, delay: 0.7}} 
-      className='max-w-2xl mx-auto font-Ovo'>An experienced software engineer with vast experience in an array of programming languages
+      className='max-w-2xl mx-auto font-Ovo'>I am a multifaceted creative and technical expert with a passion for visual storytelling, digital innovation, and strategic marketing. 
       </motion.p>
 
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
