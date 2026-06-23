@@ -30,29 +30,27 @@ const About = ({isDarkMode}) => {
         transition={{duration:0.8}} 
       className='flex w-full flex-col lg:flex-row items-center gap-20 my-20'>
 
+        {/* CONTAINER */}
         <motion.div
         initial={{opacity:0, scale:0.9}}
         whileInView={{opacity:1, scale:1}}
         transition={{duration:0.6}}     
-        className='w-64 sm:w-80 rounded-3xl max-w-none'>
-            <Image src={assets.user_image} alt='user'className='w-full rounded-3xl'/>
+        className='w-64 sm:w-80 max-w-none'>
+            {/* FIXED: Target assets.about_profile_img, set fixed aspect ratio, and object-cover */}
+            <Image 
+              src={assets.about_profile_img} 
+              alt='Brian Wahungu - About Image'
+              className='w-full aspect-[3/4] object-cover rounded-3xl shadow-md'
+            />
         </motion.div>
+        
         <motion.div 
         initial={{opacity:0}}
         whileInView={{opacity:1}}
         transition={{duration:0.6, delay:0.8}} 
         className='flex-1'>
             <p className='mb-10 max-w-2xl font-Ovo'>
-            I am a multifaceted professional with expertise in film production, 
-            full-stack software engineering, and digital marketing. With a strong 
-            foundation in storytelling, I craft compelling visual narratives while 
-            leveraging cutting-edge technology to build scalable digital solutions. 
-            My background in social media marketing and SEO allows me to bridge 
-            the gap between creativity and data-driven strategies, helping brands 
-            and businesses maximize their online presence. Whether it is developing 
-            web applications, producing high-quality video content, 
-            or executing impactful marketing campaigns, I thrive at the intersection 
-            of technology, creativity, and strategy.
+            I am a multifaceted Software Engineer dedicated to building modern, responsive web applications. While my current expertise is anchored in frontend development using React, Next.js, and Angular, my background spans robust backend capabilities with Node.js, Express, Ruby, and Ruby on Rails. Backed by seamless version control using Git, I am highly adaptable and ready to pivot to whatever technologies your project needs to succeed.
             </p>
             <motion.ul 
             initial={{opacity:0}}

@@ -34,9 +34,19 @@ import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
+import new_profile_img from './new_profile_img.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import about_profile_img from './about_profile_img.png';
+
+// Project Background Image Imports
+import my_project1 from './my_project1.png'; 
+import my_project2 from './my_project2.png';
+import my_project3 from './my_project3.png'; 
+import my_project4 from './my_project4.png'; 
 
 export const assets = {
+    about_profile_img,
+    new_profile_img,
     user_image,
     code_icon,
     code_icon_dark,
@@ -73,38 +83,67 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    my_project1,
+    my_project2,
+    my_project3,
+    my_project4,
 };
 
+// FIXED: Cleaned up background images to read directly from top-level imports safely
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
+        title: 'Food-Delivery App',
+        description: 'Full-stack application',
+        bgImage: my_project1, 
+        link: 'https://github.com/BrianWahungu/food-del'
     },
     {
-        title: 'Promotional campaign',
-        description: 'Digital Marketing',
-        bgImage: '/work-2.png',
+        title: 'Angular App',
+        description: 'Full-stack application',
+        bgImage: my_project2,
+        link: 'https://github.com/BrianWahungu/angular-app'
     },
     {
-        title: 'Videography Project',
-        description: 'Videography',
-        bgImage: '/work-3.png',
+        title: 'React Jobs',
+        description: 'Full-stack application',
+        bgImage: my_project3, 
+        link: 'https://github.com/BrianWahungu/react-jobs'
     },
     {
-        title: 'Video editing Project',
-        description: 'Video Editing',
-        bgImage: '/work-4.png',
+        title: 'Not-Just Dev - UI',
+        description: 'Full-stack application',
+        bgImage: my_project4, 
+        link: 'https://github.com/BrianWahungu/notjustdevpress-ui'
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Videography', description: 'I make creative videos that inspire audiences to take action...', link: '' },
-    { icon: assets.ui_icon, title: 'Video Editing', description: 'I utilize modern video editing technologies that produce high quality videos...', link: '' },
-    { icon: assets.graphics_icon, title: 'Digital Marketing', description: 'I craft campaigns that produce the results that the organizations are looking for...', link: '' },
-]
+    { 
+        icon: assets.web_icon, 
+        title: 'Frontend Development', 
+        description: 'Building modern, responsive, and highly interactive user interfaces using cutting-edge frameworks like React, Next.js, and Angular.', 
+        link: '#about' 
+    },
+    { 
+        icon: assets.mobile_icon, 
+        title: 'Backend Architecture', 
+        description: 'Designing robust server-side logic, routing architectures, and secure business logic using Node.js, Express, and Ruby on Rails.', 
+        link: '#about' 
+    },
+    { 
+        icon: assets.ui_icon, 
+        title: 'Database & API Integration', 
+        description: 'Implementing relational databases, optimizing queries, and architecting seamless RESTful APIs to connect your client and server layers.', 
+        link: '#about' 
+    },
+    { 
+        icon: assets.graphics_icon, 
+        title: 'Full-Stack Deployment', 
+        description: 'Managing secure end-to-end version control with Git, setting up hosting workflows, and ensuring applications scale efficiently.', 
+        link: '#about' 
+    },
+];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },

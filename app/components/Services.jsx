@@ -30,9 +30,9 @@ const Services = () => {
       whileInView={{opacity:1}}
       transition={{delay:0.7, duration:0.5}}
     className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        I offer expert film production, full-stack software development, 
-        and digital marketing services, combining creativity, technology, 
-        and strategy to deliver impactful solutions.
+        I offer comprehensive full-stack software engineering services, building 
+        scalable, secure, and highly responsive web applications from database architecture 
+        to intuitive user interfaces.
     </motion.p>
 
     <motion.div 
@@ -40,21 +40,19 @@ const Services = () => {
       whileInView={{opacity:1}}
       transition={{delay:0.9, duration:0.6}}
     className='grid grid-cols-auto gap-6 my-10'>
-      {serviceData.map(({icon, title, description, link},index)=>(
+      {serviceData.map(({icon, title, description}, index)=>(
         <motion.div 
         whileHover={{scale:1.05}}
         key={index}
           className='border border-gray-400 rounded-lg px-8 py-12 
             hover:shadow-black cursor-pointer hover:bg-lightHover 
               hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
-                <Image src={icon} alt='' className='w-10'/>
+                <Image src={icon} alt={title} className='w-10'/>
                   <h3 className='text-lg my-4 text-gray-700 dark:text-white'>{title}</h3>
                     <p className='text-sm text-gray-600 leading-5 dark:text-white/80'>
                         {description}
                     </p>
-                      <a href={link} className='flex items-center gap-2 text-sm mt-5'>
-                        Read More <Image alt='' src={assets.right_arrow} className='w-4'/>
-                      </a>
+                    {/* "Read More" link has been successfully removed from here */}
           </motion.div>
             ))}
       </motion.div>
